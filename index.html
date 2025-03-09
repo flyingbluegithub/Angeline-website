@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智能待办清单</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>西雅大坦沙大队部待办事项 📝</h1>
+    
+    <div class="input-section">
+      <input 
+        type="text" 
+        id="taskInput"
+        placeholder="输入新任务..."
+        aria-label="任务输入框"
+      >
+      <button 
+        id="addBtn"
+        aria-label="添加任务"
+      >➕ 添加</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="pending">未完成</button>
+      <button class="filter-btn" data-filter="completed">已完成</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+      <div class="two-column-grid">
+        <section class="news-section">
+          <h2>队部新闻</h2>
+          <div class="group-photo">
+            <img src="group-photo.jpg" alt="大队部全体成员合影">
+            <p class="photo-caption">西雅大坦沙大队部全体成员</p>
+          </div>
+        </section>
+      
+        <section class="notice-section">
+          <h2>教师通知</h2>
+          <ul class="notice-list">
+          </ul>
+        </section>
+      </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
